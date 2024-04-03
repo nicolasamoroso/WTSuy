@@ -1,0 +1,146 @@
+input,
+select,
+textarea {
+  all: unset;
+}
+
+select {
+  align-items: center;
+}
+
+input,
+select,
+textarea {
+  background-color: transparent;
+  color: var(--text-primary);
+  border: 2px solid var(--color-primary);
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 20px;
+  width: 448px;
+  height: 60px;
+  border-radius: 6px;
+}
+
+input,
+select {
+  height: 60px;
+}
+
+label {
+  background-color: var(--background-tertiary);
+  color: var(--text-primary);
+  font-size: 14px;
+  font-weight: bold;
+  width: 154px;
+}
+
+textarea {
+  resize: none;
+  height: 213.5px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  z-index: 100;
+  overflow-wrap: break-word;
+  padding-top: 20px;
+}
+
+.select,
+.input,
+.textarea {
+  position: relative;
+}
+
+option {
+  background-color: var(--background-tertiary);
+  color: var(--text-primary);
+}
+
+label {
+  position: absolute;
+  top: -10px;
+  left: 15px;
+  padding: 0 10px;
+  background-color: var(--background-tertiary);
+  color: var(--text-primary);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.bucket {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.popcorn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 0;
+}
+
+.error {
+  border: 2px solid var(--color-error);
+}
+
+.name-error,
+.email-error,
+.review-error {
+  color: var(--color-error);
+  font-size: 14px;
+  display: none;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+  padding-inline: 10px;
+}
+
+.arrow-icon {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  input,
+  select,
+  textarea {
+    width: 308.27px;
+    padding: 10px;
+  }
+
+  label {
+    width: 154px;
+  }
+
+  option {
+    width: 308.27px;
+  }
+
+  .bucket {
+    display: none;
+  }
+
+  .btn-container {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .popcorn {
+    right: 0;
+    top: 200px;
+  }
+}
