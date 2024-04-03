@@ -1,0 +1,23 @@
+#top-movies {
+  padding-top: 60px;
+}
+
+#review {
+  background-color: var(--background-tertiary);
+  position: relative;
+  padding: 80px 50px;
+}
+
+#billboard {
+  padding: 80px 50px;
+}
+
+@media (max-width: 749px) {
+  #review {
+    padding-inline: 20px;
+  }
+
+  #billboard {
+    padding-inline: 20px;
+  }
+}
