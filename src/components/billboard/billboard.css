@@ -1,0 +1,49 @@
+.billboard {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  align-items: end;
+  justify-items: center;
+  padding: 40px 0 60px;
+  row-gap: 50px;
+  position: relative;
+}
+
+.background-popcorn {
+  position: absolute;
+  z-index: -1;
+  right: -50px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 100%;
+}
+
+.movie-title {
+  font-size: 15px;
+  font-weight: lighter;
+  color: var(--text-primary);
+  padding-bottom: 10px;
+  max-width: 160px;
+}
+
+.poster {
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+}
+
+@media (max-width: 1100px) {
+  .billboard {
+    display: flex;
+    overflow-x: scroll;
+    gap: 60px;
+  }
+
+  .background-popcorn {
+    right: 0;
+    top: 0;
+  }
+
+  .background-popcorn-svg {
+    height: 100%;
+  }
+}
