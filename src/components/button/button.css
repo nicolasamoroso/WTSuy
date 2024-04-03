@@ -1,0 +1,91 @@
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--text-primary);
+  width: 182px;
+  height: 45px;
+  border-radius: 6px;
+  border: none;
+  font-size: 18px;
+}
+
+.btn-secondary {
+  background-color: var(--color-primary);
+  color: var(--text-primary);
+  width: 160px;
+  height: 25px;
+  border: none;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  font-size: 11px;
+}
+
+.btn-transparent {
+  background-color: transparent;
+  color: var(--text-secondary);
+  font-size: 18px;
+}
+
+.btn-border {
+  background-color: transparent;
+  color: var(--text-primary);
+  border: 2px solid var(--color-primary);
+  font-size: 18px;
+  width: 237px;
+  height: 60px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 6px;
+}
+
+.btn-view-trailer,
+.btn-review {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-view-trailer {
+  width: 83px;
+  height: 112px;
+}
+
+.btn-review {
+  width: 108px;
+  height: 110px;
+}
+
+.btn-view-trailer p,
+.btn-review p {
+  text-align: center;
+}
+
+.next-btn,
+.ticket-btn {
+  position: absolute;
+  z-index: 1;
+  width: 49.96px;
+  height: 45px;
+  background-color: var(--color-primary);
+  border-radius: 6px;
+}
+
+.next-btn {
+  top: 37px;
+  left: 14px;
+  right: 0;
+  bottom: 0;
+}
+
+.ticket-btn {
+  top: 34px;
+  left: 22px;
+  right: 0;
+  bottom: 0;
+}
+
+.btn-review svg,
+.btn-view-trailer svg {
+  z-index: 10;
+}
